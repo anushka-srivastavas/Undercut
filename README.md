@@ -1,7 +1,7 @@
 # 🏎️ Undercut
 ### Monte Carlo F1 Race Strategy Simulator
 
-Undercut is an end to end simulation system that recommends optimal pit-stop strategies for Formula 1 races by combining tire degradation modeling, safety car probability estimation, and Monte Carlo simulation on real historical race data.
+Undercut is an end to end simulation system that recommends optimal pit stop strategies for Formula 1 races by combining tire degradation modeling, safety car probability estimation, and Monte Carlo simulation on real historical race data.
 
 Built at the intersection of Statistical Modeling, Simulation, and Motorsport, the platform lets users pick a circuit, choose a tire strategy, and compare candidate pit laps to see which one produces the best expected outcome, accounting for the real chance a safety car makes a given pit stop nearly free.
 
@@ -29,7 +29,7 @@ Try it here: https://undercut.streamlit.app
 **Data & Modeling**
 - Python
 - pandas / NumPy
-- scikit-learn (fixed-effects regression)
+- scikit learn (fixed effects regression)
 
 **Simulation**
 - Monte Carlo methods
@@ -60,9 +60,9 @@ Streamlit Interactive App
 
 ## 📊 Results
 
-- Tire degradation model MAE improved from ~0.7–1.4s to ~0.35–0.7s after correcting for fuel burn-off and driver skill confounds via fixed-effects regression
-- Safety car timing modeled per-circuit at decile resolution, correctly reproducing known patterns (e.g. Qatar's SC risk clustering at race start and end, with a quiet middle)
-- Simulator verified to correctly link safety car timing to pit-stop cost — candidate pit laps inside historical SC windows show measurably higher "SC helped" rates in simulation
+- Tire degradation model MAE improved from ~0.7–1.4s to ~0.35–0.7s after correcting for fuel burn off and driver skill confounds via fixed effects regression
+- Safety car timing modeled per circuit at decile resolution, correctly reproducing known patterns (e.g. Qatar's SC risk clustering at race start and end, with a quiet middle)
+- Simulator verified to correctly link safety car timing to pit stop cost — candidate pit laps inside historical SC windows show measurably higher "SC helped" rates in simulation
 
 ## 📂 Project Structure
 
