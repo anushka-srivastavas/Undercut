@@ -1,17 +1,17 @@
 # 🏎️ Undercut
 ### Monte Carlo F1 Race Strategy Simulator
 
-Undercut is an end-to-end simulation system that recommends optimal pit-stop strategies for Formula 1 races by combining tire degradation modeling, safety car probability estimation, and Monte Carlo simulation on real historical race data.
+Undercut is an end to end simulation system that recommends optimal pit-stop strategies for Formula 1 races by combining tire degradation modeling, safety car probability estimation, and Monte Carlo simulation on real historical race data.
 
-Built at the intersection of Statistical Modeling, Simulation, and Motorsport, the platform lets users pick a circuit, choose a tire strategy, and compare candidate pit laps to see which one produces the best expected outcome — accounting for the real chance a safety car makes a given pit stop nearly free.
+Built at the intersection of Statistical Modeling, Simulation, and Motorsport, the platform lets users pick a circuit, choose a tire strategy, and compare candidate pit laps to see which one produces the best expected outcome, accounting for the real chance a safety car makes a given pit stop nearly free.
 
 ## 🚀 Live Demo
 Try it here: https://undercut.streamlit.app
 
 ## ✨ Features
 
-- Fits per-circuit, per-compound tire degradation curves using fixed-effects regression on real FastF1 lap data.
-- Models circuit-specific safety car probability, including when in the race it tends to strike, not just whether it does.
+- Fits per circuit, per compound tire degradation curves using fixed effects regression on real FastF1 lap data.
+- Models circuit specific safety car probability, including when in the race it tends to strike, not just whether it does.
 - Runs thousands of Monte Carlo race simulations per candidate pit lap to compare expected outcomes under uncertainty.
 - Visualizes strategy comparisons, including how often a safety car would make a given pit lap effectively free.
 - Accessible through an interactive Streamlit web application.
@@ -83,4 +83,4 @@ undercut/
 
 ## 💡 Motivation
 
-As an F1 fan, I wanted to build something closer to what real race strategists actually do at the pit wall, rather than another race-winner predictor. Undercut combines statistical modeling and simulation to turn raw lap-timing data into an actual strategic decision tool — and along the way, debugging a genuinely wrong tire degradation model taught me more about regression confounds and fixed effects than any tutorial project could have.
+As an F1 fan, I wanted to build something closer to what real race strategists actually do at the pit wall, rather than another race winner predictor. Undercut combines statistical modeling and simulation to turn raw lap timing data into an actual strategic decision tool and along the way, debugging a genuinely wrong tire degradation model taught me more about regression confounds and fixed effects than any tutorial project could have.
